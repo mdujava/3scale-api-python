@@ -64,7 +64,7 @@ class HttpClient:
         self.session.close()
 
     @staticmethod
-    def retry_for_session(session: requests.Session, status_forcelist: Iterable, total: int = 8):
+    def retry_for_session(session: requests.Session, status_forcelist: Iterable, total: int = 10):
         retry = Retry(
             total=total,
             backoff_factor=1,

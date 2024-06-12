@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-VERSION = "devel"
+VERSION = "0.35.0"
 if sys.argv[1] == "--release-version":
     sys.argv.pop(1)
     VERSION = sys.argv.pop(1)
@@ -41,6 +41,11 @@ setup(name='3scale-api',
       classifiers=[
           "Programming Language :: Python :: 3",
           'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
+          'Programming Language :: Python :: 3.9',
+          'Programming Language :: Python :: 3.10',
+          'Programming Language :: Python :: 3.11',
+          'Programming Language :: Python :: 3.12',
           "Operating System :: OS Independent",
           "License :: OSI Approved :: Apache Software License",
           'Intended Audience :: Developers',
